@@ -1,0 +1,57 @@
+#header {
+    display: flex; /* This is necessary for flex properties to work */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ff0000;
+    padding: 10px;
+}
+
+#title { 
+    border: 2px solid rebeccapurple;
+    background-color: lightgray;
+    flex-grow: 1;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+#attendance{
+    width: 150px;
+    border: 1px solid blue;
+    height: auto;
+    margin-right: 10px;
+    padding: 10px;
+    
+}
+#logoChild {
+    width: 165px;
+    border: 1px solid blue;
+    height: auto;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+}
+
+#navigation{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-style: dotted;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: [first] 33% [line2] 33% [line3] 33% [end];
+    grid-template-rows: [row1-start] auto [row1-end] auto [bottom-line];
+}
+
+.agenda{
+    grid-column-start: first;
+    grid-column-end: line2;
+    grid-row-start: row1-start;
+    grid-row-end: row-1-end;
+}

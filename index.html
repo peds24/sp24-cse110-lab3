@@ -4,62 +4,76 @@
     <title>Breathing App First Brainstorm</title>
     <meta name="author" content="Pedro Serdio">
     <link rel="icon" type="image/x-icon" href="/index_assets/favicon.ico">
+    <link rel="stylesheet" href="style_page.css">
 </head>
 <body>
     <main>
         <header>
-            <h1>Breathing App First Brainstorm</h1>
-            <h2>Features and aesthetics brainstorm</h2>
-            <h3>11/04/2024</h3>
-            <nav>
-                <a href="#attendance">Attendance</a> |
-                <a href="#agenda">Agenda</a> |
-                <a href="#unfinished">Unfinished Business</a> |
-                <a href="#quote">Motivational Quote</a> |
-                <a href="#comments">Comments</a> |
-                <a href="#market">Market Comparison</a> |
-                <a href="#progress">Meeting Progress</a> |
-                <a href="#summary">Summary</a> |
-                <a href="#summary">Form</a>
-            </nav>
-            <hr>
-            <img src="index_assets/app_logo.jpg" alt="Proposed logo for app">
+            <div id= "header">
+                <div id ="title">
+                    <h1>Breathing App First Brainstorm</h1>
+                    <h2>Features and aesthetics brainstorm</h2>
+                    <h3>11/04/2024</h3>
+                </div>
+                <div id="attendance">
+                    <h2>Attendance</h2>
+                        <input type="checkbox">
+                        <label> Pedro Serdio</label><br>
+                        <input type="checkbox">
+                        <label> Bruce Wayne</label><br>
+                        <input type="checkbox">
+                        <label> Bill Gates</label><br>
+                        <input type="checkbox">
+                        <label> Batman</label>
+                </div>
+                <div id="logoChild"><img id="logo" src="index_assets/app_logo.jpg" alt="Proposed logo for app"></div>
+            </div>
+            <div id="navigation">
+                <nav>
+                    <a href="#agenda">Agenda</a> |
+                    <a href="#unfinished">Unfinished Business</a> |
+                    <a href="#quote">Motivational Quote</a> |
+                    <a href="#comments">Comments</a> |
+                    <a href="#market">Market Comparison</a> |
+                    <a href="#progress">Meeting Progress</a> |
+                    <a href="#summary">Summary</a> |
+                    <a href="#summary">Form</a>
+                </nav>
+            </div>
         </header>
-        <hr>
-        <section id="attendance">
-            <h2>Attendance</h2>
-            <input type="checkbox">
-            <label> Pedro Serdio</label><br>
-            <input type="checkbox">
-            <label> Bruce Wayne</label><br>
-            <input type="checkbox">
-            <label> Bill Gates</label><br>
-            <input type="checkbox">
-            <label> Batman</label>
-        </section>
-        <section id="agenda">
-            <h2>Agenda Talking Points</h2>
-            <ol>
-                <li>Define the <b>japanese zen gardens</b> aesthetic</li>
-                <li>Brainstorm features</li>
-                <li>
-                    <ul>
-                        <li>timer</li>
-                        <li>calendar/streak tracker</li>
-                        <li>guided exercises</li>
-                        <li>music</li>
-                        <li>settings page</li>
-                    </ul>
-                </li>
-                <li>Foreign Language support</li>
-                <li>
-                    <ul>
-                        <li>i.e <em>Español</em></li>
-                    </ul>
-                </li>
-                <li>GitHub repo logistics</li>
-            </ol>
-        </section>
+
+        <div class="container">
+            <div class="item agenda">
+                <section id="agenda">
+                    <h2>Agenda Talking Points</h2>
+                    <ol>
+                        <li>Define the <b>japanese zen gardens</b> aesthetic</li>
+                        <li>Brainstorm features</li>
+                        <li>
+                            <ul>
+                                <li>timer</li>
+                                <li>calendar/streak tracker</li>
+                                <li>guided exercises</li>
+                                <li>music</li>
+                                <li>settings page</li>
+                            </ul>
+                        </li>
+                        <li>Foreign Language support</li>
+                        <li>
+                            <ul>
+                                <li>i.e <em>Español</em></li>
+                            </ul>
+                        </li>
+                        <li>GitHub repo logistics</li>
+                    </ol>
+                </section>
+            </div>
+            <div class="item unfinished"></div>
+            <div class="item quote"></div>
+            <div class="misc"></div>
+        </div>
+
+        
         <section id="unfinished">
             <h2>Unfinished Business</h2>
             <ul>
