@@ -39,7 +39,7 @@
     text-align: center;
     border-style: dotted;
     border-color: black;
-    border-width: 2px;
+    border-width: 5px;
     border-radius: 30px;
 }
 
@@ -47,11 +47,71 @@
     display: grid;
     grid-template-columns: [first] 33% [line2] 33% [line3] 33% [end];
     grid-template-rows: [row1-start] auto [row1-end] auto [bottom-line];
+    padding: 10px;
+    border-color: black;
+    border-width: 5px;
+    border-style: dotted;
 }
 
 .agenda{
     grid-column-start: first;
     grid-column-end: line2;
     grid-row-start: row1-start;
-    grid-row-end: row-1-end;
+    grid-row-end: row1-end;
+}
+
+.unfinished{
+    grid-column-start: line2;
+    grid-column-end: line3;
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
+}
+
+.quote{
+    grid-column-start: line3;
+    grid-column-end: end;
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
+}
+.misc{
+    grid-column-start: first;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: bottom-line;
+}
+
+#sectionTitle{
+    text-align: center;
+}
+
+#container2{
+    border-color: black;
+    border-style: solid;
+}
+#market, #questions {
+    display: inline-block; 
+    margin-right: 10px; 
+    padding: 5px; 
+    border: 1px solid grey; 
+    position: static;
+}
+
+#market {
+    position: relative; 
+    top: 0.3125em; 
+    left: 20px; 
+    background-color: lightblue; 
+}
+
+#questions {
+    margin-left: 0.80cm;
+    position: sticky; 
+    top: 1in; 
+    left: 200px; 
+    background-color: lightcoral;
+}
+
+#stock{
+    max-width: 45vw;
+    min-height: 75vh;
 }
