@@ -1,45 +1,57 @@
+/*
+MAIN COLOR SCHEME
+background : #E5E0DC
+#ADBF97
+#BAD9A2
+#93A392
+*/
+body{
+    background-color: E5E0DC;
+}
+
+a{
+    color: black;
+}
 #header {
     display: flex; /* This is necessary for flex properties to work */
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #ff0000;
-    padding: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
-
 #title { 
-    border: 2px solid rebeccapurple;
-    background-color: lightgray;
+    border: 3px solid #93A392;
+    background-color: #ADBF97;
     flex-grow: 1;
-    margin-right: 10px;
+    margin-right: 15px;
     padding-left: 10px;
+    border-radius: 30px;
+    height: 165px;
 }
 #attendance{
     width: 150px;
-    border: 1px solid blue;
-    height: auto;
     margin-right: 10px;
     padding: 10px;
     
 }
 #logoChild {
     width: 165px;
-    border: 1px solid blue;
-    height: auto;
+
 }
 
 #logo {
     width: 100%;
-    height: auto;
+    border-radius: 30px;
 }
 
 #navigation{
     margin: 5px;
     padding: 5px;
     text-align: center;
-    border-style: dotted;
-    border-color: black;
-    border-width: 5px;
+    border-style: solid;
+    border-color: #93A392;
+    border-width: 3px;
     border-radius: 30px;
 }
 
@@ -48,9 +60,10 @@
     grid-template-columns: [first] 33% [line2] 33% [line3] 33% [end];
     grid-template-rows: [row1-start] auto [row1-end] auto [bottom-line];
     padding: 10px;
-    border-color: black;
-    border-width: 5px;
-    border-style: dotted;
+    border-color: #93A392;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
 }
 
 .agenda{
@@ -85,14 +98,13 @@
 }
 
 #container2{
-    border-color: black;
-    border-style: solid;
+    margin: 15px;
 }
 #market, #questions {
     display: inline-block; 
     margin-right: 10px; 
     padding: 5px; 
-    border: 1px solid grey; 
+    border: 3px solid #93A392; 
     position: static;
 }
 
@@ -100,7 +112,7 @@
     position: relative; 
     top: 0.3125em; 
     left: 20px; 
-    background-color: lightblue; 
+    background-color: #ADBF97; 
 }
 
 #questions {
@@ -108,7 +120,7 @@
     position: sticky; 
     top: 1in; 
     left: 200px; 
-    background-color: lightcoral;
+    background-color: #ADBF97;
 }
 
 #stock{
