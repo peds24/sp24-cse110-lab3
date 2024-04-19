@@ -3,15 +3,30 @@ MAIN COLOR SCHEME
 background : #E5E0DC
 #ADBF97
 #BAD9A2
-#93A392
+#6F4E37
 */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+:root {
+    --custom-font: 'Comfortaa', sans-serif;
+    --fallback-font: Calibri, sans-serif; /* Fallback font */
+}
 body{
-    background-color: E5E0DC;
+    background-color: rgb(239,228,220);
+    font-family: var(--custom-font, var(--fallback-font));
+    
 }
 
 a{
     color: black;
 }
+
+strong, b{
+    color: brown;
+    text-decoration: underline;
+
+}
+
 #header {
     display: flex; /* This is necessary for flex properties to work */
     flex-wrap: wrap;
@@ -21,13 +36,13 @@ a{
     padding-top: 15px;
 }
 #title { 
-    border: 3px solid #93A392;
+    border: 3px solid 	hsl(25, 34%, 33%);
     background-color: #ADBF97;
     flex-grow: 1;
-    margin-right: 15px;
     padding-left: 10px;
     border-radius: 30px;
     height: 165px;
+    text-align: center;
 }
 #attendance{
     width: 150px;
@@ -50,7 +65,7 @@ a{
     padding: 5px;
     text-align: center;
     border-style: solid;
-    border-color: #93A392;
+    border-color: #6F4E37;
     border-width: 3px;
     border-radius: 30px;
 }
@@ -60,7 +75,7 @@ a{
     grid-template-columns: [first] 33% [line2] 33% [line3] 33% [end];
     grid-template-rows: [row1-start] auto [row1-end] auto [bottom-line];
     padding: 10px;
-    border-color: #93A392;
+    border-color: #6F4E37;
     border-width: 3px;
     border-style: solid;
     border-radius: 30px;
@@ -93,34 +108,29 @@ a{
     grid-row-end: bottom-line;
 }
 
-#sectionTitle{
+*#sectionTitle{
     text-align: center;
 }
 
 #container2{
     margin: 15px;
+    padding-bottom: 30px;
+    position: sticky;
 }
-#market, #questions {
-    display: inline-block; 
-    margin-right: 10px; 
+#market{
+    display: inline-block;  
     padding: 5px; 
-    border: 3px solid #93A392; 
+    border: 3px solid #6F4E37; 
     position: static;
-}
-
-#market {
+    border-radius: 30px;
     position: relative; 
-    top: 0.3125em; 
-    left: 20px; 
+    top: 1em; 
+    left: 25px; 
     background-color: #ADBF97; 
-}
 
+}
 #questions {
-    margin-left: 0.80cm;
-    position: sticky; 
-    top: 1in; 
-    left: 200px; 
-    background-color: #ADBF97;
+    display: none;
 }
 
 #stock{
